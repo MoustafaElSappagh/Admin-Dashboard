@@ -197,6 +197,54 @@ a {
 }
 /* End Card Container */
 
+/* Start Finance Data */
+.finance-data {
+    background-color: var(--secondry-color);
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.table {
+    width: 100%;
+}
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    background-color: var(--main-color);
+    color: var(--secondry-color);
+}
+th {
+    padding: 15px;
+    text-align: left;
+}
+tbody {
+    background-color: #f2f2f2;
+}
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+tr:nth-child(even) {
+    background-color: var(--secondry-color);
+}
+tfoot {
+    background-color: var(--main-color);
+    color: var(--secondry-color);
+    font-weight: bold;
+}
+tfoot td {
+    color: var(--secondry-color);
+}
+.finance-data button {
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+/* End Finance Data */
+
 /* Start Colors */
 .light-red {
     background-color: rgb(251, 233, 233);

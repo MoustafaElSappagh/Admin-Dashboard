@@ -1,6 +1,8 @@
 /* Start Global Rules */
 :root {
     --main-color: rgba(113, 99, 186, 255);
+    --secondry-color: #fff;
+    --transition-duration: 0.5s;
 }
 * {
     margin: 0;
@@ -27,9 +29,9 @@ a {
     width: 115px;
     height: 100vh;
     padding: 0 1.7rem;
-    color: #fff;
+    color: var(--secondry-color);
     overflow: hidden;
-    transition: all 0.5s linear;
+    transition: all var(--transition-duration) linear;
     background-color: var(--main-color);
 }
 .sidebar:hover {
@@ -48,7 +50,7 @@ a {
     padding: 1rem;
     margin: 8px 0;
     border-radius: 8px;
-    transition: all 0.5s ease-in-out;
+    transition: all var(--transition-duration) ease-in-out;
 }
 .sidebar .menu li:hover, .active {
     background-color: #e0e0e058;
@@ -86,7 +88,7 @@ a {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: var(--secondry-color);
     border-radius: 10px;
     padding: 10px 2rem;
     margin-bottom: 1rem;
@@ -121,9 +123,103 @@ a {
 .header .search-box i {
     font-size: 1.2rem;
     cursor: pointer;
-    transition: all 0.5s ease-out;
+    transition: all var(--transition-duration) ease-out;
 }
 .header .search-box i:hover {
     transform: scale(1.2);
 }
 /* End Header  */
+
+/* Start Card Container */
+.card-container {
+    background-color: var(--secondry-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+.main-title {
+    color: var(--main-color);
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.payment-card {
+    background-color: rgb(229, 223, 223);
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 290px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all var(--transition-duration) ease-in-out;
+}
+.payment-card:hover {
+    transform: translateY(-5px);
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.amount {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-size: 12px;
+    font-weight: 200;
+}
+.amount-value {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.icon {
+    color: var(--secondry-color);
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: red;
+}
+.card-details {
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* End Card Container */
+
+/* Start Colors */
+.light-red {
+    background-color: rgb(251, 233, 233);
+}
+.light-purple {
+    background-color: rgb(254, 226, 254);
+}
+.light-green {
+    background-color: rgb(235, 254, 235);
+}
+.light-blue {
+    background-color: rgb(236, 236, 254);
+}
+.dark-red {
+    background-color: red;
+}
+.dark-purple {
+    background-color: purple;
+}
+.dark-green {
+    background-color: green;
+}
+.dark-blue {
+    background-color: blue;
+}
+/* End Colors */
